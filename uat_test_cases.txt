@@ -1,0 +1,26 @@
+﻿*** Settings ***
+Resource                ../common.robot
+Test Setup              Set Log Level  DEBUG
+Test Teardown           Close all Browsers
+
+*** Variables ***
+${test_material}        ABK070
+${search_test}          AAO092
+${order_amount}         5
+${ordernumber}
+${firstname}            Test
+${new_firstname}        Åäöååöäöåöåöå
+${surname}              Robot
+${new_surname}          Äöååöåöåäöäöå
+${email}                kiltroni@gmail.com
+${new_email}            kiltroni+foo@gmail.com
+${phonenumber}          +358556954555
+${new_phonenumber}      +112233445566
+${old_password}         TestRobot1
+${new_password}         TestRobot2
+
+
+
+*** Test Cases ***
+
+
